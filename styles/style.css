@@ -351,6 +351,7 @@
     width: 500px;
 }
 
+/* ----------------Mobile Device--------------- */
 
 @media screen and (max-width: 576px){
     /* header */
@@ -481,6 +482,157 @@
         padding: 0;
         display: grid;
         grid-template-columns: repeat(2, 100px);
+    }
+    .footer p{
+        width: 100%;
+    }
+
+}
+
+
+/* ---------------------Tablet design------------------- */
+
+@media screen and (min-width:576px) and (max-width: 768px){
+    /* header */
+    .navbar{
+        margin: 0 auto;
+        flex-direction: column;
+        height: 290px;
+    }
+    .nav-list ul{
+        flex-direction: column;
+        padding-bottom: 30px;
+        padding-left: 130px;
+        
+    }
+    .nav-list ul li{
+      padding-bottom: 10px;  
+    }
+    .follow-us{
+        position: relative;
+        right: 50px;
+    }
+
+    /* banner starts */
+    .banner{
+        flex-direction: column-reverse;
+        overflow: hidden;
+    }
+    .banner-img img{
+        margin-top: 40px;
+        height: auto;
+        max-width: 600px;
+    }
+    .banner-container{
+        background-size: 600px 330px;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 100px;
+    }
+    .banner-container h3{
+        font-size: 28px;
+        padding: 30px 0 0 30px;
+    }
+    .banner-container h2{
+        font-size: 52px;
+        padding: 0px 30px 0 30px;
+    }
+    .sign-in{
+        margin: 0 80px;
+    }
+    .sign-in, .rogue{
+        padding: 15px 30px;
+    }
+
+    /* funnny Videos */
+    .funny-videos{
+        margin: 0 auto;
+    }
+    .funny-videos h3{
+        font-size: 32px;
+    }
+    .funny-videos p{
+        font-size: 12px;
+    }
+    .video-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* play games */
+   .play-games{
+    
+    flex-direction: column-reverse;
+   
+   } 
+   .play-games-description{
+    padding: 20px;
+   }
+   .play-games-description h3{
+    font-size: 50px;
+    line-height: 70px;
+    
+    
+   }
+   .play-games-description p{
+    font-size: 18px;
+    line-height: 30px;
+   }
+   .play-games-img{
+        padding: 20px;
+   }
+   .img-1{
+    width: 400px;
+    height: 450px;
+   }
+   .img-2{
+    width: 230px;
+    height: 300px;
+    position: relative;
+    left: 250px;
+   }
+
+   /* special buttons */
+   .special-btn{
+    padding: 50px 30px;
+   }
+   .div-1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   }
+
+   .btn-1:hover, .btn-2:hover, .btn-3:hover, .btn-4:hover, .btn-5:hover, .btn-6:hover, .btn-7:hover, .btn-8:hover, .btn-9:hover{
+    
+    width: 248px;
+    height: 80px;
+    border: 1px solid #FF71BB;
+    border-radius: 50px;
+}
+
+
+   /* footer starts */
+    .footer{
+        width: 100%;
+        margin: 0 auto;
+        /* overflow: hidden; */
+    }
+    .footer-features ul, .user-link ul{
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+    }
+    .user-link{
+        margin: 40px 0;
+    }
+    .footer-features ul li, .user-link ul li, .terms ul li{
+        padding-bottom: 30px;
+    }
+    .terms ul{
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        
     }
     .footer p{
         width: 100%;
